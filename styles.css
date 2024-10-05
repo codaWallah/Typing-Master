@@ -85,3 +85,14 @@ body {
 .correct_char {
   color: darkgreen;
 }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    color: azure;
+    bottom: 0;
+    width: 100%;
+}
+
