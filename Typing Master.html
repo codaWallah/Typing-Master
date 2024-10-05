@@ -1,29 +1,59 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Typing Master By Anash</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <div class="quote-display" id="quoteDisplay"><span></span></div>
-      <section class="typing">
-        <hr />
-        <div class="score">
-          <div class="timer">
-            <span class="timer__label">Time:</span>
-            <span class="timer__text" id="timer">0</span>
-          </div>
-          <div="words-per-minute">
-            <span class="words-per-minute__label">Words/min:</span>
-            <span class="words-per-minute__text" id="wpm">0</span>
-        </div>
-        </div>
-        <textarea class="quote-input" name="quoteInput" id="quoteInput" placeholder="Start typing right here!" cdkFocusInitial></textarea>
-      </section>
-    </main>
-    <script src="keywords.js"></script>
-  </body>
+<head>
+    <title>Typing Master Pro</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      Speed Typo  |   Coder_Anash
+
+    </div>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">WPM</div>
+        <div class="curr_wpm">100</div>
+      </div>
+      <div class="cpm">
+        <div class="header_text">CPM</div>
+        <div class="curr_cpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">Errors</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Time</div>
+        <div class="curr_time">60s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">% Accuracy</div>
+        <div class="curr_accuracy">100</div>
+      </div>
+    </div>
+
+    <div class="quote">
+      Click on the area below to start the game.
+    </div>
+    <textarea class="input_area"
+      placeholder="start typing here..."
+      oninput="processCurrentText()"
+      onfocus="startGame()">
+    </textarea>
+    <button class="restart_btn"
+      onclick="resetValues()">
+      Restart
+    </button>
+  </div>
+
+  <script src="keywords.js">
+  </script>
+</body>
 </html>
+
+
+
+
+
+<!-- background-image: url("https://i.ibb.co/StrjBD0/pngtree-yellow-entertainment-pc-keyboard-adorned-with-3d-glasses-image-13517399.png"); -->
